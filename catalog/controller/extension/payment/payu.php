@@ -204,7 +204,7 @@ class ControllerExtensionPaymentPayu extends Controller {
 
 						
 					
-							$this->model_checkout_order->addOrderHistory($this->request->post['txnid'], $this->config->get('payu_order_status_id'), $message, false);
+							//$this->model_checkout_order->addOrderHistory($this->request->post['txnid'], $this->config->get('payu_order_status_id'), $message, false);
 							$data['continue'] = $this->url->link('checkout/success');
 							$data['column_left'] = $this->load->controller('common/column_left');
 				            $data['column_right'] = $this->load->controller('common/column_right');
